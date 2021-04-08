@@ -10,10 +10,16 @@ body {
 
 /********** Header **********/
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   margin-bottom: 30px;
   padding: 20px 70px 20px 32px;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 99;
 }
 
 .menu-button {
@@ -100,7 +106,21 @@ body {
 
 /********** Menu **********/
 .sidebar {
+  position: fixed;
+  top: 114px;
+  left: 0;
+  width: 12%;
+  height: calc(100% - 114px);
   padding-left: 32px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+.content {
+  width: 100%;
+  margin-top: 85px;
+  padding-top: 30px;
+  padding-left: 13%;
 }
 
 .nav-menu {
@@ -148,4 +168,158 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
+}
+
+/********** Content **********/
+.channel {
+  position: relative;
+  margin-bottom: 49px;
+}
+
+.channel-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 33px;
+  color: #19202c;
+  text-decoration: none;
+}
+
+.channel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.channel-text {
+  margin-left: 20px;
+}
+
+/********** Slider **********/
+.video-card {
+  width: 250px;
+}
+
+.video-thumb {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.thumbnail {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.video-duration {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 3px 9px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}
+
+.video-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202c;
+}
+
+.video-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+
+.video-counter {
+  display: flex;
+}
+
+.video-views {
+  margin-right: 5px;
+}
+
+.video-views::after {
+  content: "";
+  display: inline-block;
+  margin-left: 5px;
+  width: 2px;
+  height: 2px;
+  background-color: #c2c2c2;
+  vertical-align: middle;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 15px;
+  right: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 66px;
+}
+
+.channel-button {
+  cursor: pointer;
+}
+
+/********** Slider-recommended **********/
+.video-card-.video-card {
+  width: 540px;
+}
+
+.video-thumb-recommended {
+  position: relative;
+  width: 540px;
+  height: 250px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.thumbnail-recommended {
+  width: 540px;
+  height: 250px;
+  object-fit: cover;
+}
+
+/********** Food & Drink **********/
+
+.wrap-channel-title {
+  display: flex;
+  align-items: center;
+}
+
+.text-recommended {
+  margin-bottom: 22px;
+  margin-left: 19px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #c2c2c2;
+}
+
+.text-subscribe {
+  position: absolute;
+  top: 8px;
+  right: 18%;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #ff0000;
+  border-radius: 20px;
 }
